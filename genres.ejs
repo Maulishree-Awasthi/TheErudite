@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="HandheldFriendly" content="true" />
+<meta name="MobileOptimized" content="320" />
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width, user-scalable=no" />
+  <title>THE ERUDITE - ARTICLES</title>
+  <link rel="icon" href="team images\logo.png">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Montserrat:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/genre-styles.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css" integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+
+<body>
+  <i class="fas fa-arrow-circle-up fa-3x" id="btnScrollToTop"></i>
+  <div class="container-fluid">
+<nav class="navbar navbar-expand-lg navbar-light">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class=" collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#Society">Society and Culture</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Travel">Travel</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Current-issues">Current issues</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#human-behavior">Human behaviour</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#fashion">Fashion Industry</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#book-review">Book reviews</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#politics">Politics</a>
+          </li>
+
+
+        </ul>
+      </div>
+
+    </nav>
+    <div class="main-section" >
+
+
+
+      <section id="Society" data-aos="fade-right"
+       data-aos-offset="300"
+       data-aos-easing="ease-in-sine">
+        <h1>Society and Culture</h1>
+        <div class="section-body">
+          <ul>
+          <% posts.forEach(function(post){ %>
+          <%  if(post.genre==1){ %>
+            <li>
+   <h1 class="post-title"><%= post.title %></h1>
+   <p><%= post.postContent.substring(0,100) + "..." %>
+     <a href="/posts/<%= post._id %>">Read More</a></p>
+   <% }}) %></li></ul>
+        </div>
+      </section>
+
+      <section id="Travel" data-aos="fade-right"
+       data-aos-offset="300"
+       data-aos-easing="ease-in-sine">
+        <h1>Travel</h1>
+
+        <div class="section-body"><ul>
+          <% posts.forEach(function(post){ %>
+            <%  if(post.genre==2){ %>
+              <li>
+   <h1 class="post-title"><%= post.title %></h1>
+   <p><%= post.postContent.substring(0,100) + "..." %>
+     <a href="/posts/<%= post._id %>">Read More</a></p>
+   <% }}) %></li></ul>
+        </div>
+
+      </section>
+
+      <section id="Current-issues" data-aos="fade-right"
+       data-aos-offset="300"
+       data-aos-easing="ease-in-sine">
+        <h1>Current Issues</h1>
+
+        <div class="section-body">
+<ul>
+          <% posts.forEach(function(post){ %>
+
+            <%  if(post.genre==3){ %>
+<li>   <h1 class="post-title"><%= post.title %></h1>
+   <p><%= post.postContent.substring(0,100) + "..." %>
+     <a href="/posts/<%= post._id %>">Read More</a></p></li>
+   <% }}) %></ul>
+        </div>
+      </section>
+
+      <section id="human-behavior" data-aos="fade-right"
+       data-aos-offset="300"
+       data-aos-easing="ease-in-sine">
+        <h1>Human Behaviour</h1>
+        <div class="section-body">
+          <ul>
+          <% posts.forEach(function(post){ %>
+            <%  if(post.genre==4){ %>
+<li>   <h1 class="post-title" ><%= post.title %></h1>
+   <p><%= post.postContent.substring(0,100) + "..." %>
+     <a href="/posts/<%= post._id %>">Read More</a></p>
+   <% }}) %></li></ul>
+        </div>
+      </section>
+
+      <section id="fashion" data-aos="fade-right"
+       data-aos-offset="300"
+       data-aos-easing="ease-in-sine">
+        <h1>Fashion Industry</h1>
+        <div class="section-body">
+          <ul>
+          <% posts.forEach(function(post){ %>
+            <%  if(post.genre==5){ %>
+<li>   <h1 class="post-title"><%= post.title %></h1>
+   <p><%= post.postContent.substring(0,100) + "..." %>
+     <a href="/posts/<%= post._id %>">Read More</a></p>
+   <%} }) %></li></ul>
+        </div>
+      </section>
+      <section id="book-review" data-aos="fade-right"
+       data-aos-offset="300"
+       data-aos-easing="ease-in-sine">
+      <h1>Book Review</h1>
+      <div class="section-body">
+        <ul>
+        <% posts.forEach(function(post){ %>
+          <%  if(post.genre==6){ %>
+<li>      <h1 class="post-title"><%= post.title %></h1>
+      <p><%= post.postContent.substring(0,15)+ "..." %>
+      <a href="/posts/<%= post._id %>">Read More</a></p>
+      <%} }) %></li></ul>
+            </div>
+          </section>
+
+
+          <section id="politics" data-aos="fade-right"
+           data-aos-offset="300"
+           data-aos-easing="ease-in-sine">
+            <h1>Politics</h1>
+            <div class="section-body">
+              <UL>
+              <% posts.forEach(function(post){ %>
+                <%  if(post.genre==7){ %>
+                  <li>
+          <h1 class="post-title"><%= post.title %></h1>
+          <p><%= post.postContent.substring(0,100)+ "..." %>
+          <a href="/posts/<%= post._id %>">Read More</a></p>
+          <% }}) %></li></ul>
+            </div>
+
+          </section>
+
+
+    </div>
+
+  </div>
+  <section id="footer" class="Footer-section">
+    <a href="https://www.instagram.com/the__erudite/">  <i class="social fab fa-instagram fa-1.5x"></i></a>
+      <a href="https://www.facebook.com/The-Erudite-103038314797697/"><i class="social fab fa-facebook-f fa-1.5x"></i></a>
+      <a href="https://www.linkedin.com/company/theerudite/about/"><i class="social fab fa-linkedin-in fa-1.5x"></i></a>
+      <a href="https://twitter.com/The__Erudite?s=09"><i class="social fab fa-twitter fa-1.5x"></i></a>
+    <p class="quote-text-author">© Copyright 2020 The Erudite</p>
+    <p class="quote-text-author">Made By : Shambhavi Awasthi and Maulishree Awasthi</p>
+  </section>
+
+  <!-- Animation js -->
+  <script>
+    AOS.init();
+  </script>
+  <script>
+  const btnScrollToTop=document.querySelector("#btnScrollToTop");
+  btnScrollToTop.addEventListener("click",function(){
+    window.scrollTo({
+      top:0,
+      left: 0,
+      behavior:"smooth"
+    });
+  });
+  </script>
+</body>
+
+</html>
