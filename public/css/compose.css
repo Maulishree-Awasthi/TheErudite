@@ -1,0 +1,24 @@
+.container-fluid {
+    margin-top: 100px;
+    margin-bottom:  100px;
+
+}
+
+a{
+  color: white;
+}
+
+ .Footer-section {
+  margin-top: 3%;
+  font-family: 'Merriweather', serif;
+  background-color: #222831;
+  color: white;
+  text-align: center;
+  padding: 1.5% 15%;
+}
+.social {
+  margin: 30px 20px;
+}
+i:hover{
+  color: #32e0c4;
+}

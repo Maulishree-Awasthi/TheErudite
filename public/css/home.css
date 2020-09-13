@@ -1,0 +1,295 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  overflow-x: hidden;
+}
+
+h1 {
+  font-size: 2.5rem;
+  line-height: 1.5;
+
+}
+a{
+  color: white;
+}
+#btnScrollToTop{
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  z-index: 999;
+  background:#32e0c4;
+  box-shadow: 0 0 10px rgba(0,0,0,0.25);
+  color: #fff ;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.cat{
+  color: #222831;
+}
+.cat:hover{
+  color: #32e0c4;
+}
+.publish{
+  color: #222831;
+}
+#Main-text{
+  text-align: center;
+  color: #222831;
+  font-family: 'Abril Fatface';
+  padding: 5% 10% 1% 10%;
+  font-size: 3rem;
+}
+#Main-sub-text{
+  text-align: center;
+  color: #222831;
+  font-family: 'Montserrat', sans-serif;
+  padding: 0 10%;
+}
+@media only screen and (max-width: 600px) {
+  h1,h3{
+    font-size: 1.5rem;
+  }
+  h2{
+    font-size: 1rem;
+  }
+  p{
+    font-size: 0.75rem;
+  }
+}
+
+.box{
+        width: 55.5%;
+        height: 35%;
+        position: absolute;
+        top: 100;
+        left: 100;
+
+    }
+    .stack-top{
+        z-index: 9;
+        margin: 180px 0 180px 600px; /* for demo purpose  */
+    }
+
+.brand {
+  padding-top: 20%;
+}
+
+.brand-image {
+  width: 10%;
+  height: 10%;
+}
+@media only screen and (max-width: 600px) {
+  .brand-image{
+    width: 20%;
+    height: 20%;
+  }
+}
+
+
+.brand-desp {
+  padding-top: 7%;
+  font-size: 1.75rem;
+  line-height: 2.5rem;
+  font-family: 'Merriweather', serif;
+}
+
+.title {
+  background-color: #b4f2e1;
+  color: white;
+}
+.back{
+  width:100%;height:600px;
+}
+.back-image-left{
+  float:left;
+  width:70%;
+  height:100%;
+  object-fit:cover;
+}
+.back-image-right{
+  float:left;
+  width:30%;
+  height:100%;
+  object-fit:cover;
+}
+@media only screen and (max-width: 600px) {
+  .back{
+    height: 500px;
+  }
+  .back-image-left{
+    width: 100%;
+    height: 100%;
+  }
+  .back-image-right{
+    display: none;
+  }
+  .box{
+    height: max-content;
+  }
+
+  .stack-top{
+    margin: 30% 22%;
+  }
+  #Main-text{
+    font-size: 2.3rem;
+  }
+  #Main-sub-text{
+    font-size: 1rem;
+  }
+
+}
+.container-fluid {
+  padding: 1.5% 15% 1.5% 15%;
+}
+
+.nav-item {
+  padding: 7px;
+}
+
+.nav-link {
+  font-family: "Montserrat";
+  font-size: 1.2rem;
+}
+
+.genre-text {
+  font-family: 'Merriweather', serif;
+  font-size: 0.75rem;
+  background-color: #32e0c4;
+}
+
+.Quotes-section {
+  padding: 7% 15% 7% 15%;
+  text-align: center;
+}
+
+.quote-body {
+  background-color: #b4f2e1;
+}
+
+.quote-text {
+  font-size: 1.2rem;
+  font-family: 'Merriweather', serif;
+  font-weight: 700;
+}
+
+.quote-text-author {
+  font-size: 0.75rem;
+  font-family: 'Merriweather', serif;
+}
+@media only screen and (max-width: 600px) {
+.quote-text{
+  font-size: 0.75rem;
+}
+  .quote-text-author{
+    font-size: 0.5rem;
+  }
+}
+
+.About-section {
+  padding: 5% 15% 5% 15%;
+  background-color: #2e414c;
+  color: white;
+}
+
+.about-image {
+  padding-top: 8.5%;
+  width: 100%;
+}
+@media only screen and (max-width: 600px) {
+  .about-image{
+    padding-top: 0;
+    padding-bottom: 2%;
+  }
+  .container-fluid {
+    padding: 1.5% 5% 1.5% 5%;
+  }
+
+}
+
+.about-text {
+  padding-top: 5%;
+  font-size: 1.2rem;
+  font-family: 'Merriweather', serif;
+  text-align: justify;
+  /* color : #222831; */
+  font-weight: 700;
+}
+@media only screen and (max-width: 600px){
+  .about-text{
+    font-size: 0.75rem;
+  }
+}
+
+
+.Post-section {
+  padding: 5% 15% 5% 15%;
+}
+
+.dog {
+  width: 10%;
+  border-radius: 100%;
+}
+
+.slide-btn {
+  padding: 15%;
+}
+
+.carousel-item {
+  text-align: center;
+  background-color: #b4f2e1;
+  padding: 7% 15%;
+}
+@media only screen and (max-width: 600px) {
+  .author-name{
+    font-size: 0.5rem;
+  }
+}
+.heading {
+  color: #222831;
+}
+
+.Contact-section {
+  text-align: center;
+  color: white;
+  padding: 3% 15%;
+  background-color: #32e0c4;
+  font-weight: 700;
+}
+
+
+.contact-text {
+  padding-top: 3%;
+  font-family: 'Merriweather', serif;
+  line-height: 1.5rem;
+}
+@media only screen and (max-width: 600px) {
+  .contact-text{
+    font-size: 0.75rem;
+  }
+}
+.instructions {
+  text-align: left;
+  padding-left: 20%;
+  padding-bottom: 3%;
+}
+
+.Footer-section {
+  font-family: 'Merriweather', serif;
+  background-color: #222831;
+  color: white;
+  text-align: center;
+  padding: 1.5% 15%;
+}
+.social {
+  margin: 30px 20px;
+}
+i:hover{
+  color: #32e0c4;
+}
